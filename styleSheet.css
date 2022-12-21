@@ -1,0 +1,56 @@
+/*
+
+Sections          */
+
+.section1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    color: white; 
+}
+
+.section2 {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*
+
+Headings in Sections        */
+    
+.mainHeading {
+    font-family: 'roboto rlex';
+    padding-left: 60px;
+    padding-top: 40vh;
+}
+
+.subHeading {
+    font-family: 'roboto rlex';
+    padding-left: 60px;
+}
+
+.secondHeading {
+    width: 100vw;
+    font-family: 'sora';
+    text-align: center;
+    font-size: 30;
+}
+
+.bio {
+    text-align: left;
+    padding-left: 100px
+}
+
+a:link {
+    text-decoration: none;
+    color: #0a67fc;
+}
+a:visited {
+    text-decoration: none;
+    color: #0a67fc;
+}
+a:hover {
+    text-decoration: underline;
+    color: #023c99;
+}
+
