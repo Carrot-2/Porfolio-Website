@@ -1,31 +1,111 @@
+<!DOCTYPE html>
 <html>
 <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
     <link rel="stylesheet" href="styleSheet.css" >
+    <title>Company Name</title>
+
+    <script>
+        window.onscroll = function() {
+            stickyNavbar();
+        };
+    
+        var navbar = document.querySelector('header');
+        var sticky = navbar.offsetTop;
+    
+        function stickyNavbar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add('fixed');
+            } else {
+                navbar.classList.remove('fixed');
+            }
+        }
+    </script>
+
 </head>
+
 <body style=" margin: 0; ">
     
-    <section class="section1" id=topOfThePage>
-    <p class="mainHeading" style="font-size: 60; margin-bottom: 0;">Hi, my name is Leon</p>
-    <p class="subHeading" style="font-size: 40;">I'm a 3D modeler</p>
-    </section>
-    
-    
-    <section class="section2" id="bioSection">
-    <h1 class="secondHeading">About me</h1>
-        
-        <div class="bio">
-        <p>Hello my name is Leon,</p>
-        <p>I'm I young 3D modeler looking for work where I can find it. Currently i'm working through the <a href="https://www.ibo.org/about-the-ib/" target="_blank">International Baccalaureate</a> system in a school called GIS. </p>
-        <!--    <a href="#topOfThePage">
-                To the top of the page
-            </a> -->
-        </div>
-        
-        <div>
+    <header class="fixed">
 
-        </div>
+            <nav>
+
+                <ul>
+
+                    <li> <img class="logo" src="file:///C:/Users/cycos/Desktop/Personal%20Project/images/twitter-logo.webp" /> </li>
+                    <li> <a href="#workExperiences"><button class="button">Work Experiences</button></a> </li>
+                    <li> <a href="#contact"><button class="button">Contact</button></a> </li>
+
+                </ul>
+
+            </nav>
+
+    </header>
+    <main>
+
+        <section class="section1" id=topOfThePage>
+
+            <div class="headings">
         
-    </section>
+                <p class="mainHeading">Name of Organisation etc.</p>
+                <p class="subHeading">Motto etc.</p>
+        
+            </div> 
+
+        </section>
     
+    
+
+        <section class="section2" id="workExperiences">
+            
+            <div style="background-color: dimgray; padding-top: 2.5vh; padding-bottom: 5vh;">
+
+                <p class="secondHeading">Past Projects</p>
+            
+            </div>
+
+            <div class="otherWork">
+                
+                <div class="project" style="background: url(file:///C:/Users/cycos/Desktop/Personal%20Project/images/Project1.png);">
+                    
+                    <p class="projectText">Torrelodones 2023</p>
+                
+                </div>
+                
+                <div class="project2" style="background-color: black;">
+
+                    <img src="..." class="image">
+                
+                </div>
+                
+                <div class="project" style="background-color: black;">
+
+                    <img src="..." class="image">
+                
+                </div>
+                
+                <div class="project2" style="background-color: black;">
+                
+                    <img src="..." class="image">
+                
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        
+        <section class="section3" id="contact">
+        
+            <img src="" class="companyLogo">
+        
+        </section>
+    
+    </main>
+
 </body>
 </html>

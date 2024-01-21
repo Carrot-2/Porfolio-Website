@@ -3,54 +3,202 @@
 Sections          */
 
 .section1 {
-    width: 100vw;
+    width: 99.1vw;
     height: 100vh;
-    background-color: gray;
+    background-image: url(file:///C:/Users/cycos/Desktop/Personal%20Project/images/CoverIMG4.png);
     color: white; 
+    background-size: contain;
+/*    line-height: 20vh; */
 }
 
 .section2 {
-    width: 100vw;
+    width: 99.1vw;
     height: 100vh;
+}
+
+.section3 {
+    width: 99.1vw;
+    height: 30vh;
+    background-color: gray;
+}
+
+/*Content in Section 1 */
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #8080804c;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    vertical-align: top;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    padding-right: 50px;
+}
+
+.mainHeading {
+    font-family: "Helvetica, Sans-Serif";
+    font-weight: 100;
+    padding-left: 2.5vw;
+    padding-top: 40vh;
+    font-size: 60px;
+    margin: 0;
+}
+
+.subHeading {
+    font-family: "courier new";
+    padding-left: 3.5vw;
+    padding-bottom: 30vh;
+    font-size: 20px;
+}
+
+/*Content in Section 2 */
+
+.secondHeading {
+    width: 90vw;
+    padding-left: 2.5vw;
+    font-family: "calibri";
+    text-align: left;
+    font-size: 30px;
+    margin: 0;
+}
+
+.otherWork {
+    text-align: left;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 2.5vh;
+}
+
+.projectText {
+    margin: 0;
+    padding-top: 5vh;
+    padding-bottom: 30vh;
+    padding-left: 15px;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    color: #1C000000;
+}
+
+.projectText:hover {
+    color: black;
+    animation-name: appear;
+    animation-duration: 0.5s;
+}
+
+.project {
+    width: 40vw;
+    height: 40vh;
+    float: left;
+    margin: 0;
+    margin-right: 5vw;
+    margin-bottom: 60px;
+}
+
+.project:hover {
+    cursor: pointer;
+    animation-name: dim;
+    animation-duration: 1s;
+    opacity: 0.5;
+}
+
+.project2 {
+    width: 40vw;
+    height: 40vh;
+    margin: 0;
+    margin-right: 0;
+    float: right;
+}
+
+.image {
+    width: 40vw;
+    height: 40vh;
+}
+
+.image:hover {
+    cursor: pointer;
+    animation-name: dim;
+    animation-duration: 0.5s;
+    opacity: 0.5;
+}
+
+@keyframes dim {
+    0% {
+        background-color: rgba(0, 0, 0, 100);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@keyframes appear {
+    0% {
+        color: #1C000000;
+    }
+    100% {
+        color: black;
+    }
+}
+
+
+/*
+
+Content in Section 3 */
+
+.companyLogo {
+    height: 10vh;
+    width: 10vw;
 }
 
 /*
 
-Headings in Sections        */
-    
-.mainHeading {
-    font-family: 'roboto rlex';
-    padding-left: 60px;
-    padding-top: 40vh;
+Functions in Section (e.g. buttons)       */
+
+.button {
+  margin-top: 15px;
+  padding: 10px 40px;
+  border-radius: 12px;
+  border: 5px solid transparent;
+  transition-duration: 0.4s;
+  color: #d6d6d6;
+  background-color: #1C000000;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
 }
 
-.subHeading {
-    font-family: 'roboto rlex';
-    padding-left: 60px;
+.button:hover {
+  background-color: #858585;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  animation-name: button;
+  animation-duration: 1s;
 }
 
-.secondHeading {
-    width: 100vw;
-    font-family: 'sora';
-    text-align: center;
-    font-size: 30;
+.button:active {
+  color: #000000;
 }
 
-.bio {
-    text-align: left;
-    padding-left: 100px
+@keyframes button {
+  0% {
+    background-color: #1C000000;
+  }
+  100% {
+    background-color: #858585;
+  }
 }
-
-a:link {
-    text-decoration: none;
-    color: #0a67fc;
-}
-a:visited {
-    text-decoration: none;
-    color: #0a67fc;
-}
-a:hover {
-    text-decoration: underline;
-    color: #023c99;
-}
-
